@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Chef Ai",
         description: "AI-powered web application that helps users generate personalized recipes based on their preferences and available ingredients",
-        image: "/src/assets/chefai.png",
+        image: "/chefai.png",
         tags: ["React", "gemini ai model", "tailwindcss"],
         demoUrl: "#",
         githubUrl: "#"
@@ -14,7 +14,7 @@ const projects = [
         id: 2,
         title: "Talent Quest",
         description: "A Job Board where recruiters can post jobs and seekers can find job",
-        image: "/src/assets/talentquest.png",
+        image: "/talentquest.png",
         tags: ["React", "Typescript", "tailwindcss","Node",'Express'],
         demoUrl: "#",
         githubUrl: "#"
