@@ -7,17 +7,18 @@ export default function ThemeToggle() {
 
     const [isDarkMode , setIsDarkMode] = useState(false);
 
-    useEffect(()=>{
+    useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
-        if(storedTheme === "dark"){
-               setIsDarkMode(true)
-               document.documentElement.classList.add("dark")
+        if (storedTheme === "dark" || !storedTheme) {
+            setIsDarkMode(true);
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+        } else {
+            setIsDarkMode(false);
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
         }
-        else{
-            localStorage.setItem("theme","light")
-            setIsDarkMode(false)
-        }
-    },[])
+    }, []);
 
     function toggleTheme(){
         if(isDarkMode){
