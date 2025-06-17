@@ -5,7 +5,7 @@ import {useState,useEffect} from "react";
 
 export default function ThemeToggle() {
 
-    const [isDarkMode , setIsDarkMode] = useState(true);
+    const [isDarkMode , setIsDarkMode] = useState(false);
 
     useEffect(()=>{
         const storedTheme = localStorage.getItem("theme");
