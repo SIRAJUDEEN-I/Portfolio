@@ -37,7 +37,7 @@ const StarBackground = () => {
   }
 
   const generateMeteors = ()=>{
-    const numberOfMeteors = 10
+    const numberOfMeteors = 8
     const newMeteors = []
 
     for(let i=0; i < numberOfMeteors ; i++){
@@ -45,7 +45,7 @@ const StarBackground = () => {
             id:1,
             size: Math.random() * 2+1,
             x: Math.random() * 100,
-            y: Math.random() * 60,
+            y: Math.random() * 100,
             animationDuration : Math.random() *2 + 3,
         })
     }

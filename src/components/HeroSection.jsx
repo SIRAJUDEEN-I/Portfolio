@@ -1,6 +1,8 @@
 import { ArrowDown } from "lucide-react"
 
+
 export default function HeroSection() {
+
     return (
         <section
             id="hero"

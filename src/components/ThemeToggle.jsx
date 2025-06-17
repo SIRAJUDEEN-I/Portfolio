@@ -5,7 +5,7 @@ import {useState,useEffect} from "react";
 
 export default function ThemeToggle() {
 
-    const [isDarkMode , setIsDarkMode] = useState(false);
+    const [isDarkMode , setIsDarkMode] = useState(true);
 
     useEffect(()=>{
         const storedTheme = localStorage.getItem("theme");
@@ -37,7 +37,7 @@ export default function ThemeToggle() {
 
     return (
     
-    <button onClick={toggleTheme} className="fixed max-sm:hidden top-5  right-5 z-50 pt-[8px] rounded-full transition-colors duration-300
+    <button onClick={toggleTheme} className="fixed  top-5  right-5 z-50 pt-[8px] sm:pt-[3px]  rounded-full transition-colors duration-300 
     focus:outline-hidden">
         {isDarkMode ? 
         (<Sun className="h-6 w-6 text-yellow-300"/>)
