@@ -116,7 +116,7 @@ export default function ContactSection() {
                   <Linkedin />
                 </a>
                
-                <a href="" target="_blank">
+                <a href="https://www.instagram.com/sirajudeen_inayathullah" target="_blank">
                   <Instagram />
                 </a>
                
