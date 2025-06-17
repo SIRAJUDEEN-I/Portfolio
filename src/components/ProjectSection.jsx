@@ -7,8 +7,8 @@ const projects = [
         description: "AI-powered web application that helps users generate personalized recipes based on their preferences and available ingredients",
         image: "/chefai.png",
         tags: ["React", "gemini ai model", "tailwindcss"],
-        demoUrl: "#",
-        githubUrl: "#"
+        demoUrl: "chefai.sirajudeen.tech",
+        githubUrl: "https://github.com/SIRAJUDEEN-I/Chef_AI"
     },
      {
         id: 2,
@@ -16,8 +16,16 @@ const projects = [
         description: "A Job Board where recruiters can post jobs and seekers can find job",
         image: "/talentquest.png",
         tags: ["React", "Typescript", "tailwindcss","Node",'Express'],
-        demoUrl: "#",
-        githubUrl: "#"
+        demoUrl: "https://talentquest.vercel.app/",
+        githubUrl: "https://github.com/SIRAJUDEEN-I/TalentQuest"
+    }
+    ,{
+        id:3,
+        title:"Coming Soon...",
+        description:" ",
+        tags:[" "],
+        demoUrl:"#",
+        githubUrl:"#"
     }
 ]
 
