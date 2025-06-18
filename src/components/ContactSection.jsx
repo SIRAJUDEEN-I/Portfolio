@@ -139,7 +139,7 @@ export default function ContactSection() {
                 <input
                   type="text"
                   id="name"
-                  name="user_name"
+                  name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="john..."
@@ -157,7 +157,7 @@ export default function ContactSection() {
                 <input
                   type="email"
                   id="email"
-                  name="user_email"
+                  name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
                   placeholder="johnwick@gmail.com"
