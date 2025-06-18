@@ -1,27 +1,43 @@
 import { useState } from "react"
 import { cn } from "../lib/util"
+import { FaHtml5 } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { RiTailwindCssLine } from "react-icons/ri";
+import { SiNextdotjs } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { TbBrandMongodb } from "react-icons/tb";
+import { TbBrandGraphql } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa6";
+import { TbBrandFigma } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
 
 const skills = [
 
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 80, category: "frontend" },
-    { name: "TypeScript", level: 80, category: "frontend" },
-    { name: "Tailwind CSS", level: 80, category: "frontend" },
-    { name: "Next.js", level: 70, category: "frontend" },
+    { name: "HTML/CSS", level: 95, category: "frontend" ,icon:<FaHtml5 />},
+    { name: "JavaScript", level: 90, category: "frontend",icon:<TbBrandJavascript /> },
+    { name: "React", level: 80, category: "frontend",icon:<FaReact /> },
+    { name: "TypeScript", level: 80, category: "frontend",icon:<SiTypescript />
+ },
+    { name: "Tailwind CSS", level: 80, category: "frontend",icon:<RiTailwindCssLine /> },
+    { name: "Next.js", level: 70, category: "frontend",icon:<SiNextdotjs />
+ },
 
     // Backend
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express", level: 75, category: "backend" },
-    { name: "MongoDB", level: 70, category: "backend" },
+    { name: "Node.js", level: 80, category: "backend",icon:<FaNode /> },
+    { name: "Express", level: 75, category: "backend",icon:<SiExpress /> },
+    { name: "MongoDB", level: 70, category: "backend",icon:<TbBrandMongodb /> },
     // { name: "PostgreSQL", level: 65, category: "backend" },
-    { name: "GraphQL", level: 60, category: "backend" },
+    { name: "GraphQL", level: 60, category: "backend",icon:<TbBrandGraphql /> },
 
     // Tools
-    { name: "Git/GitHub", level: 95, category: "tools" },
-    { name: "Docker", level: 60, category: "tools" },
-    { name: "Figma", level: 70, category: "tools" },
-    { name: "VS Code", level: 95, category: "tools" },
+    { name: "Git/GitHub", level: 95, category: "tools",icon:<FaGithub /> },
+    { name: "Docker", level: 60, category: "tools",icon:<FaDocker /> },
+    { name: "Figma", level: 70, category: "tools",icon:<TbBrandFigma /> },
+    { name: "VS Code", level: 95, category: "tools" ,icon:<VscVscode />},
 ]
 
 const categories = ["all", "frontend", "backend", "tools"]
@@ -61,7 +77,8 @@ export default function SkillsSection() {
 
                     {filteredSkills.map((skill, key) => (
                         <div key={key} className='bg-card p-6 rounded-lg shadow-xs card-hover'>
-                            <div className="text-left mb-4">
+                            <div className="text-left mb-4 flex">
+                               <span className=" ml-5 mr-3 text-3xl">{skill.icon}</span> 
                                 <h3 className="font-semibold text-lg">{skill.name}</h3>
                             </div>
                             <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
