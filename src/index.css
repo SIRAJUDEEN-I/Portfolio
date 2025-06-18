@@ -154,6 +154,17 @@
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
+@layer utilities {
+  .border-glow {
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px 2px #fff6;
+    transition: box-shadow 0.3s;
+  }
+  .border-glow:hover {
+    box-shadow: 0 0 16px 3px #fff8;
+  }
+}
+
 #root {
   max-width: 100%;
   margin: 0 auto;

@@ -50,7 +50,7 @@ export default function ProjectSection() {
                     {projects.map((project,key)=>(
                         
                         <div key={key}
-                        className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col justify-between">
+                        className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col justify-between border-glow">
                         <div className="h-100% w-100% overflow-hidden ">
                             <img src={project.image} alt={project.title} className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" />
                         </div>
@@ -86,7 +86,7 @@ export default function ProjectSection() {
                
                <div>
                         <a 
-                        className="cosmic-button w-fit flex mt-4 items-center mx-auto gap-2
+                        className="cosmic-button w-fit flex mt-8 items-center mx-auto gap-2
                         href="https://github.com/SIRAJUDEEN-I"
                         target="_blank">
                         Check My Github <ArrowRight size={16}/>
