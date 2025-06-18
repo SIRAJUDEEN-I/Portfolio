@@ -7,7 +7,7 @@ const projects = [
         description: "AI-powered web application that helps users generate personalized recipes based on their preferences and available ingredients",
         image: "/chefai.png",
         tags: ["React", "gemini ai model", "tailwindcss"],
-        demoUrl: "chefai.sirajudeen.tech",
+        demoUrl: "https://chefai.sirajudeen.tech",
         githubUrl: "https://github.com/SIRAJUDEEN-I/Chef_AI"
     },
      {
