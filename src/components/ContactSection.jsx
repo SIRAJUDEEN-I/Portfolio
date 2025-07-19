@@ -4,6 +4,7 @@ import {
   Mail,
   MapPin,
   Phone,
+
   Send,
 } from "lucide-react";
 import { cn } from "../lib/util";
@@ -118,6 +119,9 @@ export default function ContactSection() {
                
                 <a href="https://www.instagram.com/sirajudeen_inayathullah" target="_blank">
                   <Instagram />
+                </a>
+                <a href="mailto:sirajudeen4300@gmail.com">
+                  <Mail />
                 </a>
                
               </div>
